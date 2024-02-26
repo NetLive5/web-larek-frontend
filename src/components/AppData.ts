@@ -19,7 +19,6 @@ export type CatalogChangeEvent = {
 export class AppState extends Model<IAppState> {
 	basket: CLotItem[] = [];
 	catalog: ILotItem[];
-	loading: boolean;
 	order: IOrder = {
 		email: '',
 		phone: '',

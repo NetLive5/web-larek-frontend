@@ -15,6 +15,7 @@ export interface ICard<T> {
 	status: T;
 	category: string;
 	price: number;
+	selected: boolean;
 }
 
 export class Card<T> extends Component<ICard<T>> {
@@ -61,6 +62,13 @@ export class Card<T> extends Component<ICard<T>> {
 
 	get id(): string {
 		return this.container.dataset.id || '';
+	}
+
+	set selected(value: boolean) {
+		if (!this._button.disabled) {
+			this._button.disabled = value;
+			console.log(value);
+		}
 	}
 
 	set title(value: string) {

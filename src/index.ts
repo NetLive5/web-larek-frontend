@@ -89,6 +89,7 @@ events.on('preview:changed', (item: ILotItem) => {
 				image: item.image,
 				description: item.description.split('\n'),
 				price: item.price,
+				selected: item.selected,
 			}),
 		});
 	};

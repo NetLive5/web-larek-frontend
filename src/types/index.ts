@@ -26,7 +26,6 @@ export interface IAppState {
 	basket: string[]; // Корзина
 	preview: string | null; // Показ карточки
 	order: IOrder | null; // Информация о заказе при покупке товара
-	loading: boolean;
 }
 
 /**
